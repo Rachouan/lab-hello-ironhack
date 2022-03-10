@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import {Hero} from './components/Hero'
+import { Declartive, Components, SingleWay, JSX } from './components/sections/Sections';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero/>
+      <section class="react-expl">
+        <div class="container" style={{display: 'flex', textAlign: 'left'}}>
+          <Declartive />
+          <Components />
+          <SingleWay />
+          <JSX />
+        </div>    
+      </section>
     </div>
   );
 }
